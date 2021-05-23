@@ -1,0 +1,30 @@
+! EMMET abbreviation - Plugins and extensions of JavaScrpit
+console.log pritns whatever you want into the console
+Console Testing maate che
+alert gives alert on website
+Use inspect to check console
+div.classname creates entire class ka code
+. ---- class
+# ----- id
+script:src + TAB auro complete tags
+
+
+# 
+ // ways to print 
+    console.log("hello world kem cho");
+    alert("bahut tej ho rahe ho ha");
+    document.write("Documetn write writes text in the site");
+    //console API
+    console.log("hello world kem cho"); // logs information in the console
+    console.warn("errors log karne mein kaam aata hai");
+    console.error("used to give error");
+    console.clear(); // clear console css
+     So you can write everyhting in a seprate js file so that it can be called using script src 
+
+     JavaScrpit Variable- They store values
+     ctrl +/ comments out the selected code in any given language 
+     
+
+
+
+#
