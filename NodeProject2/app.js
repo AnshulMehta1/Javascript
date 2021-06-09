@@ -1,7 +1,6 @@
 let express=require('express');
 let app=express();
 let fs= require('fs');
-//  Why do we need Middle Ware
 // This is the Middle Ware
 app.use(express.json());
 
