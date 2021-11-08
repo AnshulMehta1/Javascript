@@ -1,0 +1,152 @@
+Syntax
+Selector{
+
+    Property1: property1-value;
+    Property2: property2-value;
+    ...   
+    Propertyn: propertyn-value;
+}
+Selector - Points to the HTML Element based on the name, Id,class,attribute and more
+Property- Indicates the properties that are defined for that element.
+Value - Indicates value assigned to the properties
+
+
+p{
+    color:red;
+    font-size: 22px;
+
+}
+h1{
+    color:black;
+    font-size:22em;
+}
+
+
+Two ways of inserting CSS Sheets 
+1) External style sheet 
+2) Internal style sheet / embedded in html document
+3) Inline Stylings 
+
+External Style sheet 
+.css extension named one separate file
+This file can be reused and just need to link the html document with its 
+Changes made in this external style sheet will reflect in HTML Document linked with it
+
+How to link an external style sheet with html document
+<link rel="stylesheet" href="ram.css">
+
+Internal style sheet
+Discrete sectionn in each html page for separate styling for that particular tag
+Internal stylesheet created using style tag in head tag
+ <style type="text/css">
+        h1{
+            color: orange;
+            font-size: 24px;
+        }
+
+Inline Stylings
+<p style="color:yellow;font-size: 24px";> Inline Styled Para </p>
+
+Writing inside the head tag and this overwrites the external style sheet
+It works kind of counter-intuitively, so just to explain further: inline styles override internal CSS, and internal CSS overrides external CSS files, and external CSS files override browser defaults. One way to think about it is like layers. The “closer” the style is to the element, the higher precedence it has
+IMP
+Inline overrides internal and internal overrides the external style sheet
+Inline>>Internal >>External >>Browser defaults
+So jetlu nichu abstraction etlu vadhaare priority
+// Comments in CSS 
+/* */ 
+This is the only syntax to write comments in CSS
+
+ID Selector
+Id selector uses id attribute of HTML element to select a particular element
+id of an element is unique in a page so id selector selects one unique element
+Write a # character followed by the id
+
+Naming convention ID:
+Case sensitive
+cannot start with number
+space not allowed
+Example: 
+<style>
+    #myId1{
+        color:blue;
+        font-size:18px;
+    }
+</style>
+
+P.S  If inline and internal styling has not been specified for a particular element with an ID 
+and if I have another styling for it in the external style sheet then that will be applied 
+as internal and inline ma kai specify karyu nathi
+
+Class Selector
+Class selector is used when you want to apply a style across multiple elements with same Class
+
+Naming convention Class:
+Case sensitive
+cannot start with number
+space not allowed
+
+Universal Class Selector:
+.classRam{
+    color:orange;
+    font-size:27px;
+}
+
+   <p class="classRam"> Jai Shree RAM</p>
+    <p class="classRam"> Jai Shree Krishna</p>
+
+Element Specific Style Class
+Element specific style class starts with element name and followed by .className
+So specific elements like p, h1, li, a ... of a className
+<style>
+
+elementName.className{
+    // Properties
+
+}
+
+Example: 
+h2.classRam{
+    color:gray;
+    font-size:23px;
+}
+
+</style>
+
+Use multiple Classes 
+.classKrishna{
+    text-align:center;
+}
+
+.classRam{
+    color:gray;
+    font-size:23px;
+}
+Suppose aa be classes che 
+
+<p class="classRam classKrishna"> Both are Incarnations of Lord Vishnu </p>
+
+In this the element will embibe the properties of both the Classes
+Priority  in Classes
+
+.classKrishna{
+    color:blue;
+    text-align:center;
+}
+
+.classRam{
+    color:gray;
+    font-size:23px;
+}
+If both have conflicitng attributes then the only first one is applied to elements
+
+Grouping selectors CSS:
+If we want to apply the same set of styles to multiple types of elements then grouping must be used
+h3,h2.classRam,.classBrahma{
+    color:gray;
+    font-size:18px;
+}
+This way heterogeneous objects and elements can be grouped as well.
+Once you are clear with the basics of CSS it is very intutive to apply.
+
+Background Properties:
