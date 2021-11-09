@@ -149,4 +149,85 @@ h3,h2.classRam,.classBrahma{
 This way heterogeneous objects and elements can be grouped as well.
 Once you are clear with the basics of CSS it is very intutive to apply.
 
-Background Properties:
+Background Properties List:
+color
+image
+repeat
+position
+attachment
+clip 
+size
+origin
+background
+
+1) Background color
+Set the background color of an HTML Element
+name or hex or rgb 
+In body tag
+Example
+body{
+    background-color:khaki;
+}
+body{
+    background-color:#F0E68C;
+}
+body{
+    background-color:rgb(100,100,100);
+}
+Same code for internal and inline properties
+<p style="color:rgb(255,255,255);"> This is a para </p>
+Similarly it can be et for an element , a xlass , an elemetn in a specific class so on and so forth
+Background  image
+It helps to set the background image of a HTML Element
+It repeats the image both Horizontally and Vertically 
+Also specify a bg color if the image is unavailable
+None or url of an image
+
+Example: 
+body{
+    background-image:url(D:\Downloads\anshul.png)
+}
+body{
+    background-image:url("../assets/dream1.jpg");
+
+}
+Inline
+<p style="color:white; background:rgb(130,255,180); background-image: url(../assets/dream1.jpg);">
+Background repeats
+It specifies whether the background image is repeated or not 
+repeat-x, repeat-y , no repeat
+Example:
+
+Background Position:
+It specifies the initial position of the background image
+We can set the property to left top, center top, right top, center left, ...
+left top
+left center
+left bottom
+right top
+right center
+right bottom
+center top
+center center
+center bottom
+x%, y%, 
+The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. . Default value is: 0% 0%
+
+x-position, y-position --> 90px,90px
+
+Background Attachement:
+Specifies whether the background image is scrollable or fixed when user scrolls the page. Default it is scrollable.
+
+background-attachment:fixed;
+Example:
+   <p style="background-image: url(../assets/dream1.jpg); background-attachment: fixed;"> Jai Shree RAM </p>
+
+Background: 
+It is the superset of all the properties and works as a shorthand for color,image, position, attachment..
+So in one declaration a lot of it can be specified
+Example:
+background: gray url(../assets/dream1.jpg) no-repeat right top fixed;
+Background Size: 
+Size can be lengths , %, contain or cover 
+contain- Scales the background image to be as large as possible.
+cover-scales the background image so that the content will be completely covered by the image.
